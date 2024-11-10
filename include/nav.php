@@ -5,7 +5,7 @@
 			<div class="collapse navbar-collapse" id="menubalk">
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item">
-						<a href="index.php?page=wedstrijd" class="nav-link">Wedstrijd</a>
+						<a href="wedstrijd.php" class="nav-link">Wedstrijd (Werkt niet druk op fotos)</a>
 					</li>
 					<li class="nav-item">
 						<a href="index.php?page=winnen" class="nav-link">Prijzen</a>
