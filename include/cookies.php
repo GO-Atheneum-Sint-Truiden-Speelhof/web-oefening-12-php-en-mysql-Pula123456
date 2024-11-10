@@ -1,20 +1,20 @@
 <?php
-// Start de sessie
+
 session_start();
 
 
 if (isset($_POST['accept_cookies'])) {
     
-    setcookie("user_accepts_cookies", "true", time() + (86400 * 30), "/"); // Cookie geldig voor 30 dagen
+    setcookie("user_accepts_cookies", "true", time() + (86400 * 30), "/"); 
     header("Location: start2.php");
     exit();
 } elseif (isset($_POST['reject_cookies'])) {
-    // Gebruiker weigert cookies
+    
     header("Location: https://www.google.com");
     exit();
 }
 
-// Controleer of de gebruiker cookies heeft geaccepteerd
+
 $cookies_accepted = isset($_COOKIE['user_accepts_cookies']) && $_COOKIE['user_accepts_cookies'] == "true";
 ?>
 
